@@ -1,0 +1,26 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"
+	controllerName="chip.controller.MyXML"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+    <form:SimpleForm >
+   <form:title>
+    <core:Title icon="sap-icon://customer" text="Employee detail"/>
+   
+   </form:title>
+   <form:content>
+  <Label  text="Emp Id"/>
+  <Input id="idEmpId" width="20%"/>
+  <Label text="Emp Name"/>
+  <Input id="IdEmpName" width="40%"/>
+  <Label text="Salary"  />
+  <Input id="IdEmpSal" width="30%"/>
+  <Label text="Currency" />
+  <Input id="idCurr" width="15%"/>
+   </form:content>
+
+    </form:SimpleForm>
+
+<!-- <Input id="idInp"/>
+<Button  id="idBtn" press="onBtnClick" text="Click Me" icon="sap-icon://home"/> -->
+</mvc:View>
+

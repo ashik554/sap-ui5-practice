@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SAPUI5 Walkthrough</title>
+    <script
+      src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+      data-sap-ui-theme="sap_belize"
+      data-sap-ui-libs="sap.m"
+      data-sap-ui-resourceroots='{
+			"chip": "./"
+		}'
+    ></script>
+    <script>
+      // var oView = new sap.ui.view({
+      //   viewName: 'chip.view.Main',
+      //   type: 'JS',
+      // });
+      // oView.placeAt('content');
+      var oViewXML = new sap.ui.view({
+        viewName: 'chip.view.MyXML',
+        type: 'XML',
+      });
+      oViewXML.placeAt('canvas');
+    </script>
+  </head>
+  <body class="sapUiBody">
+    <div id="canvas"></div>
+    <div id="content"></div>
+  </body>
+</html>
