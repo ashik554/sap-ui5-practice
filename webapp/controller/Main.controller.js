@@ -11,11 +11,11 @@ sap.ui.define(['sap/ui/core/mvc/Controller'], function (Controller) {
     onAfterRendeing: function () {},
     spiderman: function () {
       // get the object  of the button1
-      var oBtnNew = oSuperman.byId('idBtn');
+      var oBtnNew = this.oSuperman.byId('idBtn');
       // attach the button dynamically
       oBtnNew.attachPress(function () {
         // step:1 get the application object (instance)
-        var oCore = oSuperman;
+        var oCore = this.oSuperman;
         // step:2 obtain the ui5 control object _sap.ui.getCore().byId('idInp')
         var oInp = oCore.byId('idInp');
         // step:3 we have a value , so we can use now setter and getter function for the same value
