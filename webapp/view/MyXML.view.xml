@@ -8,13 +8,14 @@
             <Label text="Emp Id" />
             <Input id="idEmpId" width="20%" value="{/empStr/empId}"  enabled="{/empStr/hunk}"/>
             <Label text="Emp Name" />
-            <Input id="idEmpName" width="40%" value="{path:'/empStr/empName'}" enabled="{/empStr/hunk}"  />
+            <Input id="idEmpName" width="40%" value="{path:'got>/empStr/empName'}" enabled="{/empStr/hunk}"  />
             <Label text="Salary" />
             <Input id="idEmpSal" width="30%" enabled="{/empStr/hunk}"/>
             <Label text="Currency" />
             <Input id="idCurr" width="15%" enabled="{/empStr/hunk}" />
             <Label />
             <Button text="on reload " press="onReload"></Button>
+            <Button text="show " press="onShow"></Button>
         </form:content>
 
 

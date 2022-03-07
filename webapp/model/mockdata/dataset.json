@@ -1,0 +1,59 @@
+{
+  "empStr": {
+    "empId": 1000,
+    "empName": "Alu",
+    "salary": "688",
+    "currency": "EUR",
+    "hunk": true
+  },
+  "empTab": [
+    {
+      "empId": 100,
+      "empName": "jalu",
+      "salary": " 450",
+      "currency": "USD"
+    },
+    {
+      "empId": 101,
+      "empName": "Soja",
+      "salary": "350",
+      "currency": "USD"
+    },
+    {
+      "empId": 102,
+      "empName": "Sulu",
+      "salary": " 4500",
+      "currency": "USD"
+    },
+    {
+      "empId": 103,
+      "empName": "Subo",
+      "salary": " 45",
+      "currency": "USD"
+    },
+    {
+      "empId": 104,
+      "empName": "Spo",
+      "salary": " 459",
+      "currency": "USD"
+    },
+    {
+      "empId": 105,
+      "empName": "vali",
+      "salary": " 450",
+      "currency": "USD"
+    },
+    {
+      "empId": 106,
+      "empName": "labu",
+      "salary": " 451",
+      "currency": "EUR"
+    },
+    {
+      "empId": 107,
+      "empName": "qalu",
+      "salary": " 450",
+      "currency": "EUR"
+    }
+  ]
+}
