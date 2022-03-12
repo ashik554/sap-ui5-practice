@@ -1,23 +1,110 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" controllerName="chip.controller.MyXML" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-    <form:SimpleForm editable="true">
+<mvc:View xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:t='sap.ui.table' controllerName="chip.controller.MyXML" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+
+    <t:Table rows='{/empTab}' visibleRowCount="4" selectionMode="Single" rowSelectionChange="onRowSelect">
+        <t:columns>
+            
+            <t:Column>
+                <t:label>
+                    <Label text="{i18n>XLBL_EMPID}"></Label>
+                </t:label>
+                <t:template>
+                    <Text text="{empId}" />
+                </t:template>
+            </t:Column>
+            <t:Column>
+                <t:label>
+                    <Label text="{i18n>XLBL_EMPNAME}"></Label>
+                </t:label>
+                <t:template>
+                    <Input value="{path:'empName',formatter:'.formatter.myFormatterFunction'}" enabled="{=${salary}>7000?false:true}" />
+                </t:template>
+            </t:Column>
+            <t:Column>
+                <t:label>
+                    <Label text="{i18n>XLBL_SAL}"></Label>
+                </t:label>
+                <t:template>
+                    <Text text="{
+                        parts:[{path:'salary'},{path:'currency'}],
+                        formatter:'.formatter.formatCurrency' 
+                    }" />
+                </t:template>
+            </t:Column>
+            <!-- <t:Column>
+            <t:label>
+                <Label text="currency"></Label>
+            </t:label>
+            <t:template>
+                <Text text="{currency}" />
+            </t:template>
+        </t:Column> -->
+            <t:Column>
+                <t:label>
+                    <Label text="{i18n>XLBL_SMK}"></Label>
+
+                </t:label>
+                <t:template>
+                    <CheckBox selected="{smoker}"></CheckBox>
+                </t:template>
+            </t:Column>
+            <t:Column>
+                <t:label>
+                    <Label text="{i18n>XLBL_MSSTAT}"></Label>
+                </t:label>
+                <t:template>
+                    <Select selectedKey="{mStat}">
+                        <items>
+                            <core:Item text="Married" key="M" />
+                            <core:Item text="Single" key="S" />
+
+                        </items>
+                    </Select>
+                </t:template>
+            </t:Column>
+            <t:Column>
+                <t:label>
+                    <Label text="Gender"></Label>
+                </t:label>
+                <t:template>
+                    <Image src="{gender}" width="20px" height="20px" />
+                </t:template>
+            </t:Column>
+            <t:Column>
+                <t:label>
+                    <Label text="{i18n>XLBL_RATE}"></Label>
+                </t:label>
+                <t:template>
+                    <RatingIndicator value='{rating}'></RatingIndicator>
+                </t:template>
+            </t:Column>
+
+        </t:columns>
+        <!-- <t:rows>
+        <t:Row></t:Row>
+    </t:rows> -->
+ 
+    </t:Table>
+
+
+    <form:SimpleForm editable="true" id="idSimple">
         <form:title>
-            <core:Title icon="sap-icon://customer" text="Employee detail" />
+            <core:Title icon="sap-icon://customer" text="{i18n>XTIT_DETAIL}" />
 
         </form:title>
         <form:content>
-            <Label text="Emp Id" />
-            <Input id="idEmpId" width="20%" value="{/empStr/empId}"  enabled="{/empStr/hunk}"/>
-            <Label text="Emp Name" />
-            <Input id="idEmpName" width="40%" value="{path:'got>/empStr/empName'}" enabled="{/empStr/hunk}"  />
-            <Label text="Salary" />
-            <Input id="idEmpSal" width="30%" enabled="{/empStr/hunk}"/>
-            <Label text="Currency" />
-            <Input id="idCurr" width="15%" enabled="{/empStr/hunk}" />
+            <Label text="{i18n>XLBL_EMPID}" />
+            <Input id="idEmpId" width="20%" value="{empId}" />
+            <Label text="{i18n>XLBL_EMPNAME}" />
+            <Input id="idEmpName" width="40%" value="{path:'empName'}" />
+            <Label text="{i18n>XLBL_SAL}" />
+            <Input id="idEmpSal" width="30%" value="{salary}" enabled="{=${/empStr/empName}==='Ashik'? false:true}" />
+            <Label text="{i18n>XLBL_CURR}" />
+            <Input id="idCurr" width="15%" value="{currency}" enabled="{hunk}" />
             <Label />
-            <Button text="on reload " press="onReload"></Button>
-            <Button text="show " press="onShow"></Button>
+            <Button text="{i18n>XBUT_RELOAD} " press="onReload"></Button>
+            <Button text="{i18n>XBUT_SHOW}" press="onShow"></Button>
+            <Button text="{i18n>XBUT_FLIP} " press="onFlip"></Button>
         </form:content>
-
 
     </form:SimpleForm>
 

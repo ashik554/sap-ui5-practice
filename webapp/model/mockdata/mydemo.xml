@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<data>
+    <empStr>
+        <empId>7000</empId>
+        <empName>Rony</empName>
+        <salary>7800</salary>
+        <currency>USD</currency>
+    </empStr>
+    <empTable>
+        <row>
+            <empNo>7001</empNo>
+            <empName>Steve</empName>
+            <salary>4500</salary>
+            <currency>USD</currency>  
+        </row>
+        <row>
+            <empNo>7002</empNo>
+            <empName>Sdu</empName>
+            <salary>4700</salary>
+            <currency>USD</currency>  
+        </row>
+        <row>
+            <empNo>7003</empNo>
+            <empName>Jadu</empName>
+            <salary>4800</salary>
+            <currency>ERU</currency>  
+        </row>
+    </empTable>
+</data>

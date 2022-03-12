@@ -11,49 +11,81 @@
       "empId": 9000,
       "empName": "Sojib",
       "salary": "3500",
-      "currency": "USD"
+      "currency": "USD",
+      "smoker": false,
+      "gender": "https://www.online-image-editor.com/styles/2019/images/power_girl.png",
+      "mStat": "s",
+      "rating": 5
     },
     {
       "empId": 9001,
       "empName": "Suro",
       "salary": " 4555",
-      "currency": "USD"
+      "currency": "USD",
+      "smoker": false,
+      "gender": "https://www.online-image-editor.com/styles/2019/images/power_girl.png",
+      "mStat": "s",
+      "rating": 5
     },
     {
       "empId": 9003,
       "empName": "Sugo",
       "salary": " 4585",
-      "currency": "USD"
+      "currency": "USD",
+      "smoker": true,
+      "gender": "https://www.online-image-editor.com/styles/2019/images/power_girl.png",
+      "mStat": "M",
+      "rating": 4
     },
     {
       "empId": 9004,
       "empName": "Suku",
       "salary": " 4598",
-      "currency": "USD"
+      "currency": "USD",
+      "smoker": false,
+      "gender": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "mStat": "s",
+      "rating": 5
     },
     {
       "empId": 9005,
       "empName": "Sumo",
       "salary": " 45012",
-      "currency": "USD"
+      "currency": "USD",
+      "smoker": false,
+      "gender": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "mStat": "M",
+      "rating": 3
     },
     {
       "empId": 9006,
       "empName": "Sujo",
       "salary": " 4503",
-      "currency": "EUR"
+      "currency": "EUR",
+      "smoker": false,
+      "gender": "https://www.online-image-editor.com/styles/2019/images/power_girl.png",
+      "mStat": "s",
+      "rating": 5
     },
     {
       "empId": 9007,
       "empName": "Suli",
       "salary": " 450",
-      "currency": "EUR"
+      "currency": "EUR",
+      "smoker": true,
+      "gender": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "mStat": "M",
+      "rating": 5
     },
     {
       "empId": 9001,
       "empName": "Sujon",
       "salary": " 4500",
-      "currency": "USD"
+      "currency": "USD",
+      "smoker": false,
+      "gender": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "mStat": "s",
+      "rating": 5
     }
   ]
 }
